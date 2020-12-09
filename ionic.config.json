@@ -1,0 +1,7 @@
+{
+  "name": "terminal_control_ingreso_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

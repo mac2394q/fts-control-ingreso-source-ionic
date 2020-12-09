@@ -1,0 +1,78 @@
+<ion-content>
+
+  <!-- Preloader -->
+  <div id="preloader" style="display: none;">
+    <div data-loader="dual-ring"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+============================================= -->
+  <div id="main-wrapper">
+
+
+
+    <!-- Content
+  ============================================= -->
+    <div id="content" class="py-4">
+      <div class="container">
+        <div class="row">
+
+
+          <!-- Middle Panel
+        ============================================= -->
+          <div class="col-lg-12">
+            <h1 class="font-weight-bold mb-3 tablet-font">DATOS DEL VEHICULO</h1>
+
+            <!-- All Transactions
+          ============================================= -->
+            <form id="personaldetails" method="post">
+              <div class="row">
+                <div class="col-12 col-sm-12 m-2">
+                  <div class="form-group">
+                    <label  class="font-weight-bold tablet-font">PLACA DEL VEHICULO</label>
+                    <input readonly type="text" name="placa" [(ngModel)]='ingresoSalidaUI.vehiculo_id' class="tablet-font border  font-weight-bold form-control" 
+                      placeholder="Placa del vehiculo">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 m-2">
+                  <div class="form-group">
+                    <label  class="font-weight-bold tablet-font">EMPRESA DE TRANSPORTE</label>
+                    <input type="text" readonly name="empresa" [(ngModel)]='ingresoSalidaUI.empresa_trasnporte' class=" tablet-font border  font-weight-bold form-control" 
+                      placeholder="Empresa de transporte">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 m-2">
+                  <div class="form-group">
+                    <label  class="font-weight-bold tablet-font">NUMERO INTERNO</label>
+                    <input readonly type="text" name="numero_interno" [(ngModel)]='ingresoSalidaUI.numero_interno' class="tablet-font border  form-control font-weight-bold" 
+                      placeholder="Numero interno del vehiculo">
+                  </div>
+                </div>
+
+              </div>
+              <br><br>
+              <div class="tablet-font form-actions text-right tablet-font-x1">
+                <button routerLink="/salida-novalida" routerLinkActive="active" type="button" style="text-align: center; "
+                  class="btn btn-danger   round box-shadow-6 btn mr-2 mb-2 btn-lg ">
+                  <i class="fa fa-ban fa-2x"></i>&nbsp; Cancelar
+                </button>
+                <button  routerLink="/datos-conductor" routerLinkActive="active" type="button" class="btn btn-primary round box-shadow-4 btn mr-2 mb-2 btn-lg">
+                  <i class="fa fa-arrow-circle-right fa-2x "></i>&nbsp; Continuar
+                </button>
+              </div>
+            
+            </form>
+            <!-- All Transactions End -->
+          </div>
+          <!-- Middle End -->
+        </div>
+      </div>
+    </div>
+    <!-- Content end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+
+</ion-content>

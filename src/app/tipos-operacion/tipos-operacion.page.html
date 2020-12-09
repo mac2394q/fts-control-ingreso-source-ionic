@@ -1,0 +1,83 @@
+<ion-content>
+  <!-- Preloader -->
+  <div id="preloader" style="display: none;">
+    <div data-loader="dual-ring"></div>
+  </div>
+  <!-- Preloader End -->
+  <!-- Document Wrapper   
+============================================= -->
+  <div id="main-wrapper">
+    <!-- Content
+  ============================================= -->
+    <div id="content" class="py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Middle Panel
+        ============================================= -->
+          <div class="col-lg-12">
+            <h2 class="font-weight-bold mb-3 tablet-font">TIPOS DE OPERACION</h2>
+            <br>
+            <hr class="mb-4 mx-n4">
+            <br>
+            <!-- All Transactions
+          ============================================= -->
+            <div class="row " style="display: flex;">
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group">
+                  <button (click)="origen()" 
+                  style="
+                    font-size: 40px;
+                    text-align: center;
+                    width: 450px;
+                    height: 220px;" type="button" class="round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary  ">
+                    <li class="fa fa-route fa-2x"></li>&nbsp;ORIGEN &nbsp;
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group">
+                  <button (click)="transito()"
+                  style="
+                  font-size: 40px;
+                  text-align: center;
+                  width: 450px;
+                  height: 220px;" type="button" class=" round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary ">
+                    <li class="fa fa-shuttle-van fa-2x"></li>&nbsp;TRANSITO &nbsp;
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group">
+                  <button  (click)="descenso()"
+                  style="
+                  font-size: 40px;
+                  text-align: center;
+                  width: 450px;
+                    height: 220px;" type="button" class="  round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary ">
+                    <li class="fa fa-bus fa-2x"></li>&nbsp;DESCENSO &nbsp;
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group">
+                  <button (click)="patio()"
+                  style="
+                  font-size: 40px;
+                  text-align: center;
+                  width: 450px;
+                    height: 220px;;" type="button" class=" round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary ">
+                    <li class="fa fa-parking fa-2x"></li>&nbsp;PATIO RESERVA
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- All Transactions End -->
+          </div>
+          <!-- Middle End -->
+        </div>
+      </div>
+    </div>
+    <!-- Content end -->
+  </div>
+  <!-- Document Wrapper end -->
+</ion-content>

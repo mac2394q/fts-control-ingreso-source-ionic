@@ -1,0 +1,142 @@
+<ion-content>
+
+  <!-- Preloader -->
+  <div id="preloader" style="display: none;">
+    <div data-loader="dual-ring"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+============================================= -->
+  <div id="main-wrapper">
+
+
+
+    <!-- Content
+  ============================================= -->
+    <div id="content" class="py-4">
+      <div class="container">
+        <div class="row">
+
+
+          <!-- Middle Panel
+        ============================================= -->
+          <div class="col-lg-12">
+            <h1 class="font-weight-bold mb-3 tablet-font">DATOS DE OPERACION - DESCENSO</h1>
+            <hr><br>
+
+            <div class="card-body">
+
+              <fieldset class="form-group">
+                <input type="text" class="tablet-font form-control text-center font-weight-bold" readonly
+                  value="DESCENSO">
+              </fieldset>
+            </div>
+
+            <!-- All Transactions
+          ============================================= -->
+            <form id="personaldetails" method="post">
+              <div class="form-body">
+
+                <div class="form-group row">
+                  <label class=" col-md-3 label-control font-weight-bold tablet-font">Ciudad de Origen:</label>
+                  <div class="col-md-9 mx-auto">
+                    <select name="ciudadOrigen" class="tablet-font h2 form-control custom-select font-weight-bold">
+                      <option value="none" selected="">Seleccione</option>
+                      <option [value]="ciudad" *ngFor="let ciudad of ciudades">{{ ciudad }}</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="form-group row">
+                  <label class=" col-md-3 label-control font-weight-bold tablet-font">Pasajeros Descendidos</label>
+                  <div class="col-md-9 mx-auto">
+                    <select name="pasajeros" class=" tablet-font h2 form-control custom-select font-weight-bold">
+                      <option value="none" selected="" disabled="">Seleccione</option>
+                      <option [value]="numeropasajeros" *ngFor="let numeropasajeros  of numeroPasajeros">
+                        {{ numeropasajeros }}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row " style="display: flex;">
+
+                  <div class="col-lg-3 col-md-3">
+                    <div class="form-group">
+
+                      
+                      <button routerLink="/tipos-operacion" routerLinkActive="active" type="button"
+                        style=" font-size: 30px;
+                      text-align: center;
+                      width: 260px;
+                      height: 160px;" class="btn btn-danger   round box-shadow-6 btn mr-2 mb-2 btn-lg ">
+                        <i class="fa fa-arrow-left fa-2x"></i>&nbsp; Regresar
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3">
+                    <div class="form-group">
+
+                      <button routerLinkActive="active" (click)="procesarDescensoDescenso(  )" style="
+                      font-size: 30px;
+                      text-align: center;
+                      width: 260px;
+                      height: 160px;" type="button" class="round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary  ">
+                        <li class="fa fa-bus fa-2x "></li>&nbsp;DESCENSO &nbsp;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3">
+                    <div class="form-group">
+
+                      <button routerLinkActive="active" (click)="procesarDescensoOrigen()" style="
+                    font-size: 30px;
+                    text-align: center;
+                    width: 260px;
+                    height: 160px;" type="button" class=" round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary ">
+                        <li class="fa fa-route fa-2x"></li>&nbsp;DESCENSO <br> ORIGEN &nbsp;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3">
+                    <div class="form-group">
+
+                      <button routerLinkActive="active" (click)="procesarDescensoPatio()" style="
+                    font-size: 30px;
+                    text-align: center;
+                    width: 260px;
+                    height: 160px;" type="button" class="  round box-shadow-4 btn mr-3 mb-3 btn-lg  btn-secondary ">
+                        <li class="fa fa-parking fa-2x"></li>&nbsp;DESCENSO <br> PATIO
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="form-actions text-right">
+                <!-- <button routerLink="/salida-novalida" routerLinkActive="active" type="button"
+                style="text-align: center; " class="btn btn-danger   round box-shadow-6 btn mr-2 mb-2 btn-lg ">
+                <i class="fa fa-ban fa-2x"></i>&nbsp; Cancelar
+              </button>
+              <button routerLink="/mensaje-transito" routerLinkActive="active" type="button"
+                class="btn btn-info round box-shadow-4 btn mr-2 mb-2 btn-lg">
+                <i class="fa fa-arrow-circle-right fa-2x "></i>&nbsp; Continuar
+              </button> -->
+              </div>
+
+            </form>
+            <!-- All Transactions End -->
+          </div>
+          <!-- Middle End -->
+        </div>
+      </div>
+    </div>
+    <!-- Content end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+
+</ion-content>

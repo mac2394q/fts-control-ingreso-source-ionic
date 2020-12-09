@@ -1,0 +1,96 @@
+<ion-content>
+
+  <!-- Preloader -->
+  <div id="preloader" style="display: none;">
+    <div data-loader="dual-ring"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+============================================= -->
+  <div id="main-wrapper">
+
+
+
+    <!-- Content
+  ============================================= -->
+    <div id="content" class="py-4">
+      <div class="container">
+        <div class="row">
+
+
+          <!-- Middle Panel
+        ============================================= -->
+          <div class="col-lg-12">
+            <h1 class="font-weight-bold mb-3 tablet-font">DATOS DE OPERACION - ORIGEN</h1>
+            <hr><br>
+
+            <div class="card-body">
+
+              <fieldset class="form-group">
+                <input type="text"  class="tablet-font form-control text-center font-weight-bold" readonly
+                  value="ORIGEN">
+              </fieldset>
+            </div>
+
+            <!-- All Transactions
+          ============================================= -->
+            <form id="personaldetails" method="post">
+              <div class="row">
+                <div class="col-12 col-sm-12 m-2">
+                  <div class="form-group">
+                    <label class="font-weight-bold tablet-font">Hora Aproximada de Despacho </label>
+                    
+                  </div>
+                </div>
+                <div class="col-4 col-sm-2 ">
+                  <div class="form-group">
+                    <label class="font-weight-bold">&nbsp;</label>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-4 ">
+                  <div class="form-group">
+                    <label class="font-weight-bold text-right tablet-font">Hora: </label>
+                    <select name="hora" class="tablet-font form-control custom-select font-weight-bold">
+                      <option [value]="hora" *ngFor="let hora of horas">{{ hora }}</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="col-4 col-sm-4 ">
+                  <div class="form-group">
+                    <label class="font-weight-bold tablet-font">Minutos: </label>
+                    <select name="hora" class=" tablet-font form-control custom-select font-weight-bold">
+                      <option [value]="minuto" *ngFor="let minuto of minutos">{{ minuto }}</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+              <br><br>
+              <div class="form-actions text-right tablet-font">
+                <button routerLink="/tipos-operacion" routerLinkActive="active" type="button"
+                  style="text-align: center; " class="btn btn-danger   round box-shadow-6 btn mr-2 mb-2 btn-lg ">
+                  <i class="fa fa-arrow-left fa-2x"></i>&nbsp; Regresar
+                </button>
+               
+                <button routerLink="/mensaje-origen" routerLinkActive="active" type="button"
+                  class="btn btn-primary round box-shadow-4 btn mr-2 mb-2 btn-lg">
+                  <i class="fa fa-arrow-circle-right fa-2x "></i>&nbsp; Continuar
+                </button>
+              </div>
+
+            </form>
+            <!-- All Transactions End -->
+          </div>
+          <!-- Middle End -->
+        </div>
+      </div>
+    </div>
+    <!-- Content end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+
+</ion-content>

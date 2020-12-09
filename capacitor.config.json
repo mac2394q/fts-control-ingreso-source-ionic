@@ -1,0 +1,9 @@
+{
+  "appId": "com.fts.app",
+  "appName": "CI ENTRADA",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  
+  "cordova": {}
+}
